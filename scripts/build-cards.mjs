@@ -8,6 +8,7 @@
 // the REST calls are simply unauthenticated.
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 
 const config = JSON.parse(await readFile('profile.config.json', 'utf8'));
 const LOGIN = config.login;
@@ -181,4 +182,14 @@ await mkdir(OUT, { recursive: true });
 await writeFile(`${OUT}/banner.svg`, bannerCard(user, now));
 await writeFile(`${OUT}/kpis.svg`, kpiCard(stats));
 await writeFile(`${OUT}/languages.svg`, languagesCard(langs));
+
+// Point the README at each card with a content hash (?v=...), so a changed card gets a
+// new URL and browsers and GitHub's cache show it straight away. Unchanged cards keep
+// their URL, so this never creates a commit on its own.
+let readme = await readFile('README.md', 'utf8');
+for (const name of ['banner', 'kpis', 'languages']) {
+  const hash = createHash('sha256').update(await readFile(`${OUT}/${name}.svg`)).digest('hex').slice(0, 10);
+  readme = readme.replace(new RegExp(`assets/${name}\\.svg(\\?v=[0-9a-f]+)?`, 'g'), `assets/${name}.svg?v=${hash}`);
+}
+await writeFile('README.md', readme);
 console.log(JSON.stringify({ ...stats, languages: langs.length }));
