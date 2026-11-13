@@ -6,19 +6,19 @@
   <img src="assets/kpis.svg" width="100%" alt="Total repos, all stars, followers and years active on GitHub" />
 </p>
 
-### 📊 Contributions
+### <img src="assets/icons/contributions.svg" height="22" alt="" /> Contributions
 
 <p align="center">
   <img src="assets/contributions.svg" width="100%" alt="Contribution heatmap for the last 52 weeks" />
 </p>
 
-### 🧩 Tech Stack & Languages
+### <img src="assets/icons/code.svg" height="22" alt="" /> Tech Stack &amp; Languages
 
 <p align="center">
   <img src="assets/tech-stack.svg" width="100%" alt="Core technologies and language breakdown" />
 </p>
 
-### 🔖 Notable Projects <sub>· most stars</sub>
+### <img src="assets/icons/bookmark.svg" height="22" alt="" /> Notable Projects <sub>· most stars</sub>
 
 <!-- projects:start -->
 <p align="center">
