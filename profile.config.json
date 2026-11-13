@@ -2,8 +2,9 @@
   "login": "LuciusJesperChloe",
   "welcomeTitle": "Welcome to Lucius Jesper Chloe's Hub",
   "welcomeSubtitle": "Explore my open source contributions and projects",
-  "tags": ["FinTech"],
+  "tags": [
+    "FinTech"
+  ],
   "extraTechnologies": [],
-  "notableProjects": 4,
   "excludeRepos": []
 }
