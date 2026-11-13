@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner-3ed3c36949.svg" width="100%" alt="Welcome to Lucius Jesper Chloe's Hub" />
+  <img src="assets/banner-443bf47881.svg" width="100%" alt="Welcome to Lucius Jesper Chloe's Hub" />
 </p>
 
 <p align="center">
@@ -7,5 +7,5 @@
 </p>
 
 <p align="center">
-  <img src="assets/languages-8f130e0244.svg" width="100%" alt="Languages across public repositories" />
+  <img src="assets/languages-3132798295.svg" width="100%" alt="Languages across public repositories" />
 </p>
