@@ -1,0 +1,43 @@
+name: Refresh profile cards
+
+# Runs on a timer or by hand only. Nothing from pull requests or issues can start it.
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+# The built-in token may only push the regenerated cards to this repository.
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-cards
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # Plain git and the runner's own Node: no third-party actions to trust or pin.
+      - name: Build and commit cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          auth=$(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)
+          echo "::add-mask::$auth"
+          git -c http.https://github.com/.extraheader="AUTHORIZATION: basic $auth" \
+            clone --depth 1 "https://github.com/${GITHUB_REPOSITORY}.git" repo
+          cd repo
+          node --version
+          node scripts/build-cards.mjs
+          git add assets README.md
+          if git diff --cached --quiet; then
+            echo "Cards unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh profile cards"
+          git -c http.https://github.com/.extraheader="AUTHORIZATION: basic $auth" push origin HEAD

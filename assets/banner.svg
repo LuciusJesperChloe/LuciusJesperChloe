@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="168" viewBox="0 0 880 168" role="img" aria-labelledby="t">
+<title id="t">Welcome to Lucius Jesper Chloe&#39;s Hub. Explore my open source contributions and projects.</title>
+<style>text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif}</style>
+<rect x="0.5" y="0.5" width="879" height="167" rx="12" fill="#0a0a0a" stroke="#262626"/>
+<text x="32" y="56" font-size="26" font-weight="600" fill="#fafafa">Welcome to Lucius Jesper Chloe&#39;s Hub</text>
+<text x="32" y="88" font-size="16" fill="#a3a3a3">Explore my open source contributions and projects</text>
+<rect x="32" y="114" width="74.62" height="28" rx="14" fill="none" stroke="#3f3f46"/>
+<text x="69.31" y="132.5" font-size="13" fill="#d4d4d8" text-anchor="middle">FinTech</text>
+<rect x="114.62" y="114" width="105.30000000000001" height="28" rx="14" fill="none" stroke="#3f3f46"/>
+<text x="167.27" y="132.5" font-size="13" fill="#d4d4d8" text-anchor="middle">Open to work</text>
+<circle cx="701.5799999999999" cy="51" r="4" fill="#4ade80"><animate attributeName="opacity" values="1;.25;1" dur="2.4s" repeatCount="indefinite"/></circle>
+<text x="848" y="56" font-size="13" fill="#737373" text-anchor="end">Updated <tspan fill="#4ade80">13 Nov 2026</tspan></text>
+</svg>
