@@ -7,7 +7,7 @@
 // The workflow passes the built-in GITHUB_TOKEN; without one (local preview)
 // the REST calls are simply unauthenticated.
 
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, readdir, rm } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 
 const config = JSON.parse(await readFile('profile.config.json', 'utf8'));
@@ -178,18 +178,20 @@ const stats = {
   years,
 };
 
+// Each card is saved as <name>-<content hash>.svg and the README points at that file.
+// A changed card gets a new file name, so neither browsers nor GitHub's image cache can
+// keep showing the old one; an unchanged card keeps its name, so no commit is made.
 await mkdir(OUT, { recursive: true });
-await writeFile(`${OUT}/banner.svg`, bannerCard(user, now));
-await writeFile(`${OUT}/kpis.svg`, kpiCard(stats));
-await writeFile(`${OUT}/languages.svg`, languagesCard(langs));
-
-// Point the README at each card with a content hash (?v=...), so a changed card gets a
-// new URL and browsers and GitHub's cache show it straight away. Unchanged cards keep
-// their URL, so this never creates a commit on its own.
+const cards = { banner: bannerCard(user, now), kpis: kpiCard(stats), languages: languagesCard(langs) };
+const existing = await readdir(OUT);
 let readme = await readFile('README.md', 'utf8');
-for (const name of ['banner', 'kpis', 'languages']) {
-  const hash = createHash('sha256').update(await readFile(`${OUT}/${name}.svg`)).digest('hex').slice(0, 10);
-  readme = readme.replace(new RegExp(`assets/${name}\\.svg(\\?v=[0-9a-f]+)?`, 'g'), `assets/${name}.svg?v=${hash}`);
+for (const [name, content] of Object.entries(cards)) {
+  const file = `${name}-${createHash('sha256').update(content).digest('hex').slice(0, 10)}.svg`;
+  await writeFile(`${OUT}/${file}`, content);
+  for (const old of existing) {
+    if (old !== file && new RegExp(`^${name}(-[0-9a-f]{10})?\\.svg$`).test(old)) await rm(`${OUT}/${old}`);
+  }
+  readme = readme.replace(new RegExp(`assets/${name}(-[0-9a-f]{10})?\\.svg(\\?v=[0-9a-f]+)?`, 'g'), `${OUT}/${file}`);
 }
 await writeFile('README.md', readme);
 console.log(JSON.stringify({ ...stats, languages: langs.length }));
