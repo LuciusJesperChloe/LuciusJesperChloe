@@ -111,10 +111,10 @@ function kpiCard(stats) {
     [String(stats.years), stats.years === 1 ? 'Year on GitHub' : 'Years on GitHub'],
   ];
   const body = items.map(([value, label], i) => {
-    const x = i * cw + pad;
+    const x = i * cw + cw / 2;
     const divider = i ? `<line x1="${i * cw}" y1="24" x2="${i * cw}" y2="${H - 24}" stroke="${T.border}"/>` : '';
-    return `${divider}<text x="${x}" y="58" font-size="30" font-weight="600" fill="${T.text}">${esc(value)}</text>
-<text x="${x}" y="82" font-size="13" fill="${T.muted}">${label}</text>`;
+    return `${divider}<text x="${x}" y="58" font-size="30" font-weight="600" fill="${T.text}" text-anchor="middle">${esc(value)}</text>
+<text x="${x}" y="82" font-size="13" fill="${T.muted}" text-anchor="middle">${label}</text>`;
   }).join('\n');
   const title = `${stats.repos} repositories, ${stats.stars} stars, ${stats.followers} followers, ${stats.years} years on GitHub`;
   return svg(W, H, title, `${panel(0, 0, W, H)}\n${body}`);

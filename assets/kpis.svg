@@ -2,12 +2,12 @@
 <title id="t">9 repositories, 0 stars, 4 followers, 2 years on GitHub</title>
 <style>text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif}</style>
 <rect x="0.5" y="0.5" width="879" height="107" rx="10" fill="#0a0a0a" stroke="#1f1f1f"/>
-<text x="28" y="58" font-size="30" font-weight="600" fill="#ededed">9</text>
-<text x="28" y="82" font-size="13" fill="#a1a1a1">Repositories</text>
-<line x1="220" y1="24" x2="220" y2="84" stroke="#1f1f1f"/><text x="248" y="58" font-size="30" font-weight="600" fill="#ededed">0</text>
-<text x="248" y="82" font-size="13" fill="#a1a1a1">Stars</text>
-<line x1="440" y1="24" x2="440" y2="84" stroke="#1f1f1f"/><text x="468" y="58" font-size="30" font-weight="600" fill="#ededed">4</text>
-<text x="468" y="82" font-size="13" fill="#a1a1a1">Followers</text>
-<line x1="660" y1="24" x2="660" y2="84" stroke="#1f1f1f"/><text x="688" y="58" font-size="30" font-weight="600" fill="#ededed">2</text>
-<text x="688" y="82" font-size="13" fill="#a1a1a1">Years on GitHub</text>
+<text x="110" y="58" font-size="30" font-weight="600" fill="#ededed" text-anchor="middle">9</text>
+<text x="110" y="82" font-size="13" fill="#a1a1a1" text-anchor="middle">Repositories</text>
+<line x1="220" y1="24" x2="220" y2="84" stroke="#1f1f1f"/><text x="330" y="58" font-size="30" font-weight="600" fill="#ededed" text-anchor="middle">0</text>
+<text x="330" y="82" font-size="13" fill="#a1a1a1" text-anchor="middle">Stars</text>
+<line x1="440" y1="24" x2="440" y2="84" stroke="#1f1f1f"/><text x="550" y="58" font-size="30" font-weight="600" fill="#ededed" text-anchor="middle">4</text>
+<text x="550" y="82" font-size="13" fill="#a1a1a1" text-anchor="middle">Followers</text>
+<line x1="660" y1="24" x2="660" y2="84" stroke="#1f1f1f"/><text x="770" y="58" font-size="30" font-weight="600" fill="#ededed" text-anchor="middle">2</text>
+<text x="770" y="82" font-size="13" fill="#a1a1a1" text-anchor="middle">Years on GitHub</text>
 </svg>
