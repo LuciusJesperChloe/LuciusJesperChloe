@@ -3,13 +3,9 @@
 </p>
 
 <p align="center">
-  <img src="assets/kpis.svg" width="100%" alt="Total repos, all stars, followers and years active on GitHub" />
+  <img src="assets/kpis.svg" width="100%" alt="Repositories, stars, followers and years on GitHub" />
 </p>
-
-### <img src="assets/icons/code.svg" height="22" alt="" /> Tech Stack &amp; Languages
 
 <p align="center">
-  <img src="assets/tech-stack.svg" width="100%" alt="Core technologies and language breakdown" />
+  <img src="assets/languages.svg" width="100%" alt="Languages across public repositories" />
 </p>
-
-<sub>Cards refresh automatically every 6 hours from GitHub's API.</sub>

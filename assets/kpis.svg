@@ -1,20 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="156" viewBox="0 0 880 156" role="img" aria-labelledby="t">
-<title id="t">9 total repos, 0 stars, 4 followers, 2 years active</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="108" viewBox="0 0 880 108" role="img" aria-labelledby="t">
+<title id="t">9 repositories, 0 stars, 4 followers, 2 years on GitHub</title>
 <style>text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif}</style>
-<g><rect x="0.5" y="0.5" width="207" height="155" rx="12" fill="#0a0a0a" stroke="#262626"/>
-<g transform="translate(92 26)" fill="none" stroke="#a3a3a3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7.5A1.5 1.5 0 0 1 4.5 6h4l2 2.5h9A1.5 1.5 0 0 1 21 10v8.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/></g>
-<text x="104" y="98" font-size="40" font-weight="700" fill="#fafafa" text-anchor="middle">9</text>
-<text x="104" y="128" font-size="13" letter-spacing="2" fill="#a3a3a3" text-anchor="middle">TOTAL REPOS</text></g>
-<g><rect x="224.5" y="0.5" width="207" height="155" rx="12" fill="#0a0a0a" stroke="#262626"/>
-<g transform="translate(316 26)" fill="none" stroke="#a3a3a3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2.6 5.3 5.9.9-4.25 4.1 1 5.8L12 16.9l-5.25 2.7 1-5.8L3.5 9.7l5.9-.9z"/></g>
-<text x="328" y="98" font-size="40" font-weight="700" fill="#fafafa" text-anchor="middle">0</text>
-<text x="328" y="128" font-size="13" letter-spacing="2" fill="#a3a3a3" text-anchor="middle">ALL STARS</text></g>
-<g><rect x="448.5" y="0.5" width="207" height="155" rx="12" fill="#0a0a0a" stroke="#262626"/>
-<g transform="translate(540 26)" fill="none" stroke="#a3a3a3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8.5" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><circle cx="16.5" cy="7.5" r="3"/><path d="M17 13.6c2.7.4 4.5 2.6 4.5 5.4"/></g>
-<text x="552" y="98" font-size="40" font-weight="700" fill="#fafafa" text-anchor="middle">4</text>
-<text x="552" y="128" font-size="13" letter-spacing="2" fill="#a3a3a3" text-anchor="middle">FOLLOWERS</text></g>
-<g><rect x="672.5" y="0.5" width="207" height="155" rx="12" fill="#0a0a0a" stroke="#262626"/>
-<g transform="translate(764 26)" fill="none" stroke="#a3a3a3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g>
-<text x="776" y="98" font-size="40" font-weight="700" fill="#fafafa" text-anchor="middle">2</text>
-<text x="776" y="128" font-size="13" letter-spacing="2" fill="#a3a3a3" text-anchor="middle">YEARS ACTIVE</text></g>
+<rect x="0.5" y="0.5" width="879" height="107" rx="10" fill="#0a0a0a" stroke="#1f1f1f"/>
+<text x="28" y="58" font-size="30" font-weight="600" fill="#ededed">9</text>
+<text x="28" y="82" font-size="13" fill="#a1a1a1">Repositories</text>
+<line x1="220" y1="24" x2="220" y2="84" stroke="#1f1f1f"/><text x="248" y="58" font-size="30" font-weight="600" fill="#ededed">0</text>
+<text x="248" y="82" font-size="13" fill="#a1a1a1">Stars</text>
+<line x1="440" y1="24" x2="440" y2="84" stroke="#1f1f1f"/><text x="468" y="58" font-size="30" font-weight="600" fill="#ededed">4</text>
+<text x="468" y="82" font-size="13" fill="#a1a1a1">Followers</text>
+<line x1="660" y1="24" x2="660" y2="84" stroke="#1f1f1f"/><text x="688" y="58" font-size="30" font-weight="600" fill="#ededed">2</text>
+<text x="688" y="82" font-size="13" fill="#a1a1a1">Years on GitHub</text>
 </svg>
