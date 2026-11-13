@@ -22,10 +22,10 @@
 
 <!-- projects:start -->
 <p align="center">
-<a href="https://github.com/LuciusJesperChloe/LJC-HeatMap"><img src="assets/project-1.svg" width="49%" alt="LJC-HeatMap" /></a>
-<a href="https://github.com/LuciusJesperChloe/LJCTransferEntropy"><img src="assets/project-2.svg" width="49%" alt="LJCTransferEntropy" /></a>
-<a href="https://github.com/LuciusJesperChloe/YouTube-clone-dark-mode-"><img src="assets/project-3.svg" width="49%" alt="YouTube-clone-dark-mode-" /></a>
-<a href="https://github.com/LuciusJesperChloe/UI-Designs"><img src="assets/project-4.svg" width="49%" alt="UI-Designs" /></a>
+<a href="https://github.com/LuciusJesperChloe/LuciusJesperChloe"><img src="assets/project-1.svg" width="49%" alt="LuciusJesperChloe" /></a>
+<a href="https://github.com/LuciusJesperChloe/LJC-HeatMap"><img src="assets/project-2.svg" width="49%" alt="LJC-HeatMap" /></a>
+<a href="https://github.com/LuciusJesperChloe/LJCTransferEntropy"><img src="assets/project-3.svg" width="49%" alt="LJCTransferEntropy" /></a>
+<a href="https://github.com/LuciusJesperChloe/YouTube-clone-dark-mode-"><img src="assets/project-4.svg" width="49%" alt="YouTube-clone-dark-mode-" /></a>
 </p>
 <!-- projects:end -->
 
