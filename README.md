@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/kpis-33976ded7e.svg" width="100%" alt="Repositories, stars, followers and years on GitHub" />
+  <img src="assets/kpis-620c7eec99.svg" width="100%" alt="Repositories, stars, followers and years on GitHub" />
 </p>
 
 <p align="center">
