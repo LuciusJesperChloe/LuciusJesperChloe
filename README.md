@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner-7064d652e5.svg" width="100%" alt="Welcome to Lucius Jesper Chloe's Hub" />
+  <img src="assets/banner-a5a8192450.svg" width="100%" alt="Welcome to Lucius Jesper Chloe's Hub" />
 </p>
 
 <p align="center">
